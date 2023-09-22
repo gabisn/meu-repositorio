@@ -4,7 +4,7 @@ function Header(){
     return(
         <header>
             <div>
-                <h1>Barbie</h1>
+                <h1>Gabi SN</h1>
             </div>
             <nav>
                 <ul>

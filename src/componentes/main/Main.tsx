@@ -36,7 +36,7 @@ export default function Main() {
         {
             id:5,
             titulo:'Semana do meio ambiente',
-            sinopse:"participei da semana do meio agrddrgrdrrgdrmbiente IFMS 2021, realizada em entre os dias 31 de maio e 02 de junho de 2021",
+            sinopse:"participei da semana do meio ambiente IFMS 2021, realizada em entre os dias 31 de maio e 02 de junho de 2021",
             imagem:'/semana do meio ambiente.jpg'
         },
     ]

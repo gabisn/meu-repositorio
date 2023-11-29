@@ -133,3 +133,34 @@ export default function Main() {
         </>
     )
 }
+
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
+const MovieList = () => {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('URL_DO_SEU_BACKEND/api/filmes');
+        setMovies(response.data);
+      } catch (error) {
+        console.error('Erro ao obter os dados dos filmes:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+       <h1>Lista de Filmes</h1>
+      <ul>
+        {movies.map((movie) => (
+          <li key={movie.id}>{movie.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
